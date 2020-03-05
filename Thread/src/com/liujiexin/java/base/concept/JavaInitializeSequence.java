@@ -1,12 +1,11 @@
 package com.liujiexin.java.base.concept;
 
-import com.sun.org.glassfish.gmbal.Description;
-
 /**
- * @program: JavaSenior
- * @description: java初始化顺序
- * @author: liu jie xin
- * @create: 2020-03-05 14:57
+ * @Program: JavaSenior
+ * @description : java初始化顺序
+ * @author: Liu Jiexin
+ * @Date: 2020-03-05 15:25
+ * @Version 1.0
  */
 public class JavaInitializeSequence {
     
@@ -19,6 +18,11 @@ public class JavaInitializeSequence {
     * @return int
     **/
     public int As(Integer a){
+
+        JavaInitializeSequence1 javaInitializeSequence1 = new JavaInitializeSequence1();
+        javaInitializeSequence1.IntToStrings(12);
+
+        System.out.println(a+10);
         return a + 10;
     }
 }
