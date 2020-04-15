@@ -19,6 +19,13 @@ public class JavaInitializeSequence1 {
       * @Param a 整数
       * @return
     */
+    /**
+    * @Author Liu Jiexin
+    * @Description //TODO 
+    * @Date  2020/3/11 8:38
+    * @Param [a]
+    * @return java.lang.String
+    **/
     public String IntToStrings(int a){
         return  a + "";
     }
