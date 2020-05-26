@@ -35,6 +35,10 @@ class ThreadTest extends Thread{
 }
 
 
+/**
+ * 继承创建线程
+ * @author ljx
+ */
 public class CreateThreadExtends extends Thread{
     public static void main(String[] args) {
         ThreadTest threadTest = new ThreadTest();
@@ -42,19 +46,17 @@ public class CreateThreadExtends extends Thread{
         threadTest.start();
 
         //问题一：不能直接通过run()方法启动方式线程
-        //threadTest.run();
+        ///threadTest.run();
 
-//        问题二： 再启动一个线程，遍历100以内的偶数，不能直接通过start的方法再次调用，会抛异常IllegalThreadStateException
+        //问题二： 再启动一个线程，遍历100以内的偶数，不能直接通过start的方法再次调用，会抛异常IllegalThreadStateException
         //由于线程已经启动，当前状态是已启动
+        ///threadTest.start();
 
-//        threadTest.start();
-
-//        需要再启动一个线程 需要再创建一个对象
+        //需要再启动一个线程 需要再创建一个对象
         ThreadTest threadTest2 = new ThreadTest();
         threadTest2.start();
 
         System.out.println("hello");
-
         for(int i = 0; i < 100; i++){
             if(i % 2 == 0){
                 System.out.println("main******************************"+i);
