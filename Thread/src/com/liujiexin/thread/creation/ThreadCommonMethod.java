@@ -13,6 +13,7 @@ package com.liujiexin.thread.creation;
  * 7：join():在线程a中调用线程b的join()，此时线程a就进入阻塞状态，直到线程b完全执行完以后，线程a才结束阻塞状态
  * 8：stop()：已过时，结束线程
  * 9：sleep(long millis): 休眠(阻塞)
+ * 10： isAlive() : 判断当前线程的是否存活
  *
  * @Author: Liu Jiexin
  * @Date: 2020-04-16 09:00
